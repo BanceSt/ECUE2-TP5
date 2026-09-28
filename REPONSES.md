@@ -37,13 +37,20 @@ un setNbDisponibles(int n) est inutile car on peut déjà changer cette valeur v
 que c'est la seul raison de modifier cette valeur, mettre setNbDisponibles(int n) perdrait aussi en lisibilité.
 
 **3.2** :
-on utilise le setTitre() dans le constructeure.
+on utilise le setTitre() dans le constructeur.
 
 ## Partie 4
 
 **4.1** :
+L'étape 3, n'accepte pas l'entrée du nouvelle author car date de naissance incohérente
+l'étape 4, refuse la modification de titre car étant null
+l'étape 6 ne crache plus.
+Le code est maintenant plus robuste et efficace.
 
 **4.2** :
+livres[0] = null
+livres[0] = livres[1]
+On peut conclure qui ne veut pas laisser l'acces directe à la variable livres.
 
 ## Partie 5
 

@@ -28,28 +28,33 @@ public class CodeDuStagiaire {
         bib.afficherLivres();
 
         System.out.println("\n=== Étape 2 : trois lecteurs empruntent Germinal");
-        germinal.nbDisponibles--;
-        germinal.nbDisponibles--;
-        germinal.nbDisponibles--;
+        germinal.emprunter();
+        germinal.emprunter();
+        germinal.emprunter();
         System.out.println(germinal);
 
         System.out.println("\n=== Étape 3 : un auteur contemporain");
-        Auteur inconnu = new Auteur("Dupont", "Jean", LocalDate.of(2090, 1, 1));
-        System.out.println(inconnu);
+        try {
+            Auteur inconnu = new Auteur("Dupont", "Jean", LocalDate.of(2090, 1, 1));
+        } catch (IllegalArgumentException e) {
+            System.out.println("Refusé : " + e.getMessage());
+        }
 
         System.out.println("\n=== Étape 4 : \"correction\" d'une faute de frappe");
-        tourDuMonde.isbn = "123";
-        tourDuMonde.titre = null;
+        try {
+            tourDuMonde.setTitre(null);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Refusé : " + e.getMessage());
+        }
+
         System.out.println(tourDuMonde);
 
         System.out.println("\n=== Étape 5 : \"petit ménage\" dans la bibliothèque");
-        bib.nbLivres = 1;
         bib.afficherLivres();
         bib.ajouterLivre(new Livre(hugo, "Notre-Dame de Paris", "9782253096337", 1));
         bib.afficherLivres();
 
         System.out.println("\n=== Étape 6 : on remplit tout");
-        bib.nbLivres = 100;
         bib.ajouterLivre(new Livre(zola, "L'Assommoir", "9782070360024", 1));
         bib.afficherLivres();
 
