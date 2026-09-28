@@ -16,7 +16,7 @@ public class Livre {
             throw new IllegalArgumentException("L'auteur est Null");
         }
 
-        if (nbExemplaires >= 1) {
+        if (nbExemplaires < 1) {
             throw new IllegalArgumentException("Au moins un exemplaire");
         }
         setTitre(titre);
