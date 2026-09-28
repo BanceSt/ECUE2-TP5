@@ -55,14 +55,23 @@ On peut conclure qui ne veut pas laisser l'acces directe à la variable livres.
 ## Partie 5
 
 **5.1** :
+La capacité doit rester la mm et inalterable à travers les instances. Comme MAX_CAPICITE est défini avec final, il est pas modifiable
+donc il n'y a aucun probleme à le rendre accessible directement.
 
 **5.2** :
+Tous les livres aurait le même code.
 
 **5.3** :
+Cette une méthode statique qui peut s'utiliser sans instance si on met une méthode ou une variable qui necessite une instance
+le code va crash.
 
 **5.4** :
+Static est utile quand une information doit être partager ou utiliser toutes les instances de la class alors que quand 
+la variable n'est nécéssaire qu'a l'instance il est une erreur d'utiliser statique.
 
 **5.5** :
+estValide est utilisable pour tous livre car il suit la norme isbn donc on le met statique, getAge n'est lié qu'a un auteur précis
+.Dans le JDk on Math qui suit cette logique.
 
 ## Partie 6
 

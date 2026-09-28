@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Code écrit par l'ancien stagiaire.
  */
 public class Bibliotheque {
-    private static final int MAX_LIVRE = 100;
+    public static final int MAX_LIVRE = 100;
     private Livre[] livres = new Livre[MAX_LIVRE];
     private int nbLivres = 0;
 
