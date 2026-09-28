@@ -33,8 +33,11 @@ individuellement.
 ## Partie 3
 
 **3.1** :
+un setNbDisponibles(int n) est inutile car on peut déjà changer cette valeur via les methodes emprunter et rendre. Etant donner 
+que c'est la seul raison de modifier cette valeur, mettre setNbDisponibles(int n) perdrait aussi en lisibilité.
 
 **3.2** :
+on utilise le setTitre() dans le constructeure.
 
 ## Partie 4
 
