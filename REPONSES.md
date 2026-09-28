@@ -24,8 +24,11 @@ C'est rarament la faute du langage ou du code, les class sont mal construite, el
 ## Partie 2
 
 **2.1** :
+Non, les règles disent qu'après attribution les valeurs ne sont plus modifiable donc les setteurs sont inutiles
 
 **2.2** :
+Le faire dans le constructeur permet de vérifier automatique à chaque création d'instance au lieu de le faire à cheque fois
+individuellement.
 
 ## Partie 3
 
